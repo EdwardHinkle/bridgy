@@ -1,6 +1,8 @@
 # coding=utf-8
 """Unit tests for handlers.py.
 """
+from __future__ import unicode_literals
+
 import json
 import StringIO
 import urllib2
@@ -264,7 +266,7 @@ asdf http://other/link qwert
       'objectType': 'activity',
       'verb': 'react',
       'id': 'tag:fa.ke,2013:000_scissors_by_111',
-      'content': u'✁',
+      'content': '✁',
       'object': {'url': 'http://example.com/original/post'},
       'author': {
         'displayName': 'Alice',
